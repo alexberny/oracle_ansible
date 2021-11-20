@@ -2,5 +2,7 @@
   hosts: localhost
   connection: local
   roles:
-    - add_repo
-    - base_packages
+    - role: add_repo
+      tags: add_repo
+    - role: base_packages
+      tags: base_packages
