@@ -1,0 +1,13 @@
+- name: Add AppStream Repo
+  become: yes
+  yum_repository:
+    name: ol8_AppStream
+    description: OL8 AppStream repo
+    baseurl: https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/
+
+- name: Add UEKR6 repo
+  become: yes
+  yum_repository:
+    name: ol8_UEKR6
+    description: OL8 UEKR6 repo
+    baseurl: https://yum.oracle.com/repo/OracleLinux/OL8/UEKR6/x86_64/
