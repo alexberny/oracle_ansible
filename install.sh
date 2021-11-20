@@ -19,4 +19,4 @@ else
     git pull
 fi 
 
-ansible-playbook workstation-setup.yml --ask-vault-pass -e@~/password.yaml
+ansible-playbook install.yml --ask-vault-pass -e@~/password.yml
