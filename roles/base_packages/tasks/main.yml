@@ -1,5 +1,13 @@
+---
 - name: Upgrade all packages
   become: yes
   dnf:
-    name: "*"
+    name: "*" 
+    state: latest
+
+- name: install basic packages
+  become: yes
+  dnf:
+    name:
+      - vim
     state: latest
